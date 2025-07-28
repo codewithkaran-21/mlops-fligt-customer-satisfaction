@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/mlops-fligt-delay/mlruns/951050686396409274/158d1c11a88341ff9decf56cb58644c6/artifacts
+end_time: 1753701812073
+entry_point_name: ''
+experiment_id: '951050686396409274'
+lifecycle_stage: active
+run_id: 158d1c11a88341ff9decf56cb58644c6
+run_name: calm-gnat-122
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753701723713
+status: 3
+tags: []
+user_id: codey

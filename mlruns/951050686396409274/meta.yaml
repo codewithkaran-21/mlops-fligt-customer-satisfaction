@@ -1,0 +1,6 @@
+artifact_location: file:///D:/mlops-fligt-delay/mlruns/951050686396409274
+creation_time: 1753701722889
+experiment_id: '951050686396409274'
+last_update_time: 1753701722889
+lifecycle_stage: active
+name: Model_Training_Experiment
