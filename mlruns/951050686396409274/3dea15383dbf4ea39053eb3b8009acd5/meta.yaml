@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/mlops-fligt-delay/mlruns/951050686396409274/3dea15383dbf4ea39053eb3b8009acd5/artifacts
+end_time: 1753787739684
+entry_point_name: ''
+experiment_id: '951050686396409274'
+lifecycle_stage: active
+run_id: 3dea15383dbf4ea39053eb3b8009acd5
+run_name: bouncy-goat-939
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753787656316
+status: 3
+tags: []
+user_id: codey

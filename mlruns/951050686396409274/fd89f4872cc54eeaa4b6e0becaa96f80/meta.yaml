@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/mlops-fligt-delay/mlruns/951050686396409274/fd89f4872cc54eeaa4b6e0becaa96f80/artifacts
+end_time: 1753704153017
+entry_point_name: ''
+experiment_id: '951050686396409274'
+lifecycle_stage: active
+run_id: fd89f4872cc54eeaa4b6e0becaa96f80
+run_name: industrious-wren-698
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753704065011
+status: 3
+tags: []
+user_id: codey

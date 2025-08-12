@@ -1,0 +1,10 @@
+artifact_location: file:///D:/mlops-fligt-delay/mlruns/951050686396409274/models/m-aaf227a960c34caab4aece2c2e667b31/artifacts
+creation_timestamp: 1753787716882
+experiment_id: '951050686396409274'
+last_updated_timestamp: 1753787739664
+model_id: m-aaf227a960c34caab4aece2c2e667b31
+model_type: null
+name: model
+source_run_id: 3dea15383dbf4ea39053eb3b8009acd5
+status: 2
+status_message: null

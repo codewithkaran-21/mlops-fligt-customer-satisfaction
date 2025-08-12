@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Customer Satisfaction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 500px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+            padding: 32px 24px 24px 24px;
+        }
+        h2 {
+            text-align: center;
+            color: #1a237e;
+            margin-bottom: 24px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+        label {
+            font-weight: 600;
+            color: #3949ab;
+            margin-bottom: 4px;
+        }
+        input, select {
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #b0bec5;
+            font-size: 1rem;
+        }
+        button {
+            background: linear-gradient(90deg, #1a237e 0%, #3949ab 100%);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background 0.2s, transform 0.2s;
+        }
+        button:hover {
+            background: linear-gradient(90deg, #3949ab 0%, #1a237e 100%);
+            transform: translateY(-2px) scale(1.04);
+        }
+        .result {
+            margin-top: 24px;
+            text-align: center;
+            font-size: 1.2rem;
+            color: #1a237e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Flight Customer Satisfaction</h2>
+        <form id="predictForm" method="POST" action="/predict">
+            <label for="online_boarding">Online Boarding (0-5):</label>
+            <input type="number" id="online_boarding" name="Online Boarding" min="0" max="5" required>
+
+            <label for="delay_ratio">Delay Ratio:</label>
+            <input type="number" step="any" id="delay_ratio" name="Delay Ratio" required>
+
+            <label for="inflight_wifi">Inflight wifi service (0-5):</label>
+            <input type="number" id="inflight_wifi" name="Inflight wifi service" min="0" max="5" required>
+
+            <label for="class">Class:</label>
+            <select id="class" name="Class" required>
+                <option value="0">Eco</option>
+                <option value="1">Eco Plus</option>
+                <option value="2">Business</option>
+            </select>
+
+            <label for="type_of_travel">Type of Travel:</label>
+            <select id="type_of_travel" name="Type of Travel" required>
+                <option value="0">Personal Travel</option>
+                <option value="1">Business Travel</option>
+            </select>
+
+            <label for="inflight_entertainment">Inflight entertainment (0-5):</label>
+            <input type="number" id="inflight_entertainment" name="Inflight entertainment" min="0" max="5" required>
+
+            <label for="flight_distance">Flight Distance:</label>
+            <input type="number" id="flight_distance" name="Flight Distance" min="0" required>
+
+            <label for="seat_comfort">Seat comfort (0-5):</label>
+            <input type="number" id="seat_comfort" name="Seat comfort" min="0" max="5" required>
+
+            <label for="leg_room_service">Leg room service (0-5):</label>
+            <input type="number" id="leg_room_service" name="Leg room service" min="0" max="5" required>
+
+            <label for="on_board_service">On-board service (0-5):</label>
+            <input type="number" id="on_board_service" name="On-board service" min="0" max="5" required>
+
+            <label for="cleanliness">Cleanliness (0-5):</label>
+            <input type="number" id="cleanliness" name="Cleanliness" min="0" max="5" required>
+
+            <label for="ease_of_online_booking">Ease of Online Booking (0-5):</label>
+            <input type="number" id="ease_of_online_booking" name="Ease of Online Booking" min="0" max="5" required>
+
+            <button type="submit">Predict</button>
+        </form>
+        {% if prediction %}
+        <div class="result" id="result">{{ prediction }}</div>
+        {% endif %}
+    </div>
+</body>
+</html>

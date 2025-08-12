@@ -1,0 +1,22 @@
+artifact_path: file:///D:/mlops-fligt-delay/mlruns/951050686396409274/models/m-cc82b3b49a3646018752955e5f1627d5/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.3
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.1
+mlflow_version: 3.1.4
+model_id: m-cc82b3b49a3646018752955e5f1627d5
+model_size_bytes: 690696
+model_uuid: m-cc82b3b49a3646018752955e5f1627d5
+prompts: null
+run_id: 55b08ec053634ccab690dfe36cae4523
+utc_time_created: '2025-07-29 11:17:04.418468'
